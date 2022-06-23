@@ -1,5 +1,4 @@
 # Importing the OpenCV library
-#testingtestingTESTING
 import cv2
 import os
 

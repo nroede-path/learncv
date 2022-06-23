@@ -3,7 +3,9 @@ import cv2
 import os
 
 # Image path
-image_path = r'/home/nroede/Python/Scripts/learncv/intro/images/introimg.jpg'
+# on Linux = r'/home/nroede/Python/Scripts/learncv/intro/images/introimg.jpg'
+# on Windows = r'C:\Users\nils\.vscode\learncv\intro\images/introimg.jpg'
+image_path = r'C:\Users\nils\.vscode\learncv\intro/images/introimg.jpg'
 
 # Reading the image
 image = cv2.imread(image_path)

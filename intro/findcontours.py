@@ -1,5 +1,4 @@
-# Python code to find the co-ordinates of
-# the contours detected in an image.
+# Python code to find the coordinates of the contours detected in an image, labeling the corners and drawing contours.
 
 # Following https://www.geeksforgeeks.org/find-co-ordinates-of-contours-using-opencv-python/
 
@@ -13,8 +12,7 @@ image_path = r'/home/nroede/Python/Scripts/learncv/intro/images/test.jpg'
 font = cv2.FONT_HERSHEY_COMPLEX
 img2 = cv2.imread(image_path, cv2.IMREAD_COLOR)
 
-# Reading same image in another
-# variable and converting to gray scale.
+# Reading same image in another variable and converting to gray scale.
 img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
 # Converting image to a binary image

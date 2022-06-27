@@ -1,5 +1,8 @@
 # Python code to find the co-ordinates of
 # the contours detected in an image.
+
+# Following https://www.geeksforgeeks.org/find-co-ordinates-of-contours-using-opencv-python/
+
 import numpy as np
 import cv2
 

@@ -1,3 +1,5 @@
+# Following https://www.geeksforgeeks.org/opencv-python-tutorial/
+
 # Importing the OpenCV library
 import cv2
 import os

@@ -91,8 +91,7 @@ cv2.imshow('w8', output)
 # Using cv2.imshow() method
 # Displaying the image
 
-# waits for user to press any key
-# (this is necessary to avoid Python kernel form crashing)
+# waits for user to press any key (this is necessary to avoid Python kernel form crashing)
 cv2.waitKey(0)
   
 # closing all open windows
@@ -101,8 +100,7 @@ cv2.destroyAllWindows()
 # Image directory
 directory = r'/home/nroede/Python/Scripts/learncv/intro/images'
 
-# Change the current directory 
-# to specified directory 
+# Change the current directory to specified directory 
 os.chdir(directory)
 
 # List files and directories    

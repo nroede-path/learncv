@@ -9,7 +9,9 @@ import numpy as np
 # which operations are to be done.
 # Make sure that the image is in the same
 # directory in which this python program is
-img = cv2.imread('roadlines.jpg')
+image_path = r'/home/nroede/Python/Scripts/learncv/intro/images/brickpattern.jpg'
+img = cv2.imread(image_path)
+orig = img.copy()
 
 # Convert the img to grayscale
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
@@ -22,7 +24,7 @@ lines = cv2.HoughLines(edges,1,np.pi/180, 200)
 
 # The below for loop runs till r and theta values
 # are in the range of the 2d array
-for r_theta in lines[0]:
+for r_theta in lines:
 	r,theta = r_theta[0]
 	# Stores the value of cos(theta) in a
 	a = np.cos(theta)
@@ -53,6 +55,15 @@ for r_theta in lines[0]:
 	#drawn. In this case, it is red.
 	cv2.line(img,(x1,y1), (x2,y2), (0,0,255),2)
 	
+
+cv2.imshow('original', orig)
+
 # All the changes made in the input image are finally
 # written on a new image houghlines.jpg
-cv2.imwrite('linesDetected.jpg', img)
+cv2.imshow('linesDetected', img)
+
+# waits for user to press any key (this is necessary to avoid Python kernel form crashing)
+cv2.waitKey(0)
+  
+# closing all open windows
+cv2.destroyAllWindows()
